@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: hello
-          image: us-docker.pkg.dev/cloudrun/container/hello:latest
+          image: aplulu/cloud-run-hello:latest
           ports:
             - containerPort: 8080
 
