@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-hello
+  namespace: argocd-hello
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/aplulu/argocd-playground.git
+    targetRevision: HEAD
+    path: argocd-hello
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd-hello
