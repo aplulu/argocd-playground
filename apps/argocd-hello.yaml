@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argocd-hello
-  namespace: argocd-hello
+  namespace: argocd
 spec:
   project: default
   syncPolicy:
