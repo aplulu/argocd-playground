@@ -3,6 +3,9 @@ kind: Application
 metadata:
   name: argocd-hello
   namespace: argocd
+  annotations:
+    notifications.argoproj.io/subscribe.on-sync-succeeded.discord: ""
+    notifications.argoproj.io/subscribe.on-sync-failed.discord: ""
 spec:
   project: default
   syncPolicy:
